@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const form=document.querySelector("form")
     
 setTimeout(() => {
