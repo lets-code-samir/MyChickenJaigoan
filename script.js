@@ -37,13 +37,13 @@ form.addEventListener("submit",(e)=>{
     
     // Show confirmation popup
     const confirmation = document.getElementById("confirmation");
-    confirmation.classList.add("active")
+    // confirmation.classList.add("active")
 
-    setTimeout(() => {
+    // setTimeout(() => {
        window.open(whatsappURL, "_blank");
-       confirmation.classList.remove("active");
-       form.reset();
-    }, 1500);
+    //    confirmation.classList.remove("active");
+    //    form.reset();
+    // }, 1500);
     
     
 })
