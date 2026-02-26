@@ -16,19 +16,22 @@ setTimeout(() => {
 form.addEventListener("submit",(e)=>{
     e.preventDefault()
     const name = document.getElementById("name").value;
-    const mobile = document.getElementById("mobileNumber");
+    const mobileInput = document.getElementById("mobileNumber");
     const weight = document.getElementById('weight').value
     const item=document.getElementById('item').value
     const place=document.getElementById('location').value
     
+    //the value inside mobileInput
+    const mobile=mobileInput.value.trim()
+
     // we are putting a conditioning to verify if the number of that person is correct
-    if ( !/^[0-9]{10}$/.test(mobile.value.trim())){
+    if ( !/^[0-9]{10}$/.test(mobile)){
         alert('enter correct number')
-        mobile.value=''
-        mobile.focus()
+        mobileInput.value=''
+        mobileInput.focus()
         return
        }
-    const message = `Hi, My name is ${name} from ${place}. I want ${weight} of ${item}. My number is ${mobile.value}`;
+    const message = `Hi, My name is ${name} from ${place}. I want ${weight} of ${item}. My number is ${mobile}`;
     const encodedMessage = encodeURIComponent(message);
 
     const phoneNumber = "919083133309"; // replace with real number
@@ -37,14 +40,12 @@ form.addEventListener("submit",(e)=>{
     
     // Show confirmation popup
     const confirmation = document.getElementById("confirmation");
-    // confirmation.classList.add("active")
+    confirmation.classList.add("active")
 
-    // setTimeout(() => {
-       window.open(whatsappURL, "_blank");
-    //    confirmation.classList.remove("active");
-    //    form.reset();
-    // }, 1500);
-    
+    setTimeout(()=>{
+        window.location.href=whatsappURL
+        form.reset()
+    },1000)
     
 })
 
