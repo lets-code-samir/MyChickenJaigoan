@@ -47,7 +47,6 @@ form.addEventListener("submit",(e)=>{
         form.reset()
         window.location.href=whatsappURL
         
-
     },1000)
     
 })
