@@ -28,15 +28,15 @@ body {
 }
 
 #welcome img {
-    width: 160px;              
+    width: 140px;              
     margin-bottom: 25px;
     animation: float 2s ease-in-out infinite alternate;
     filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3)); 
 }
 
 #welcome h1 {
-    font-size: 46px;          
-    letter-spacing: 2px;
+    font-size: 28px;          
+    letter-spacing: 1px;
     font-weight: 600;
     text-shadow: 0 5px 15px rgba(0,0,0,0.3); 
 }
