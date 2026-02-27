@@ -61,6 +61,12 @@ body {
     background: linear-gradient(to right, #fff, #ffd60a);
     border-radius: 10px;
 }
+@media (max-width: 600px) {
+    .tagline {
+        font-size: 13px;
+        letter-spacing: 0.5px;
+    }
+}
 
 @keyframes float {
     from { transform: translateY(0px); }
