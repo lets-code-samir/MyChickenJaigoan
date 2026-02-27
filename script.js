@@ -10,7 +10,7 @@ setTimeout(() => {
         document.getElementById("mainContent").style.display = "block";
     }, 1000);
 
-}, 2000);
+}, 3000);
 
 
 form.addEventListener("submit",(e)=>{

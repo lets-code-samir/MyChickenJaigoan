@@ -42,6 +42,25 @@ body {
     text-shadow: 0 5px 15px rgba(0,0,0,0.3);
     padding: 0 15px; 
 }
+.tagline {
+    margin-top: 12px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+}
+
+.tagline::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(to right, #fff, #ffd60a);
+    border-radius: 10px;
+}
 
 @keyframes float {
     from { transform: translateY(0px); }
