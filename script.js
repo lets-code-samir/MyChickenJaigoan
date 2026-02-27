@@ -34,7 +34,7 @@ form.addEventListener("submit",(e)=>{
     const message = `Hi, My name is ${name} from ${place}. I want ${weight} of ${item}. My number is ${mobile}`;
     const encodedMessage = encodeURIComponent(message);
 
-    const phoneNumber = "919083133309"; // replace with real number
+    const phoneNumber = "919735966928"; // replace with real number
 
     const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
     
